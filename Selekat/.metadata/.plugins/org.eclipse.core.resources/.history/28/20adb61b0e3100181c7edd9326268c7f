@@ -1,0 +1,72 @@
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+import java.util.Random;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+public class ReportAnalysis {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+       try
+       {
+    	WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("https://ecdy-test.prc.us2.oraclecloud.com/procurement/faces/FndOverview");
+		TimeUnit.SECONDS.sleep(10);
+	
+		driver.findElement(By.id("userid")).sendKeys("Lakshaman.parihar");
+	
+		driver.findElement(By.id("password")).clear();
+		
+		driver.findElement(By.id("password")).sendKeys("Honey1comb");
+		
+		driver.findElement(By.id("btnActive")).click();//Sign in
+		TimeUnit.SECONDS.sleep(15);
+
+		TimeUnit.SECONDS.sleep(10);
+		driver.findElement(By.id("pt1:_UISmmLink::icon")).click(); //click to navigator icon 
+		TimeUnit.SECONDS.sleep(10); 
+		driver.findElement(By.id("pt1:nv_itemNode_tools_reports_and_analytics")).click(); // Report and analysis link
+		TimeUnit.SECONDS.sleep(10);
+		
+		
+		TimeUnit.SECONDS.sleep(30);
+		driver.findElement(By.id("pt1:USra:0:RAp1:0:tree:1::di")).click(); //Link for shared icon
+		TimeUnit.SECONDS.sleep(10);
+		driver.findElement(By.id("pt1:USra:0:RAp1:0:tree:19::di")).click(); //Supply chain Management click
+		TimeUnit.SECONDS.sleep(10);
+		
+		driver.findElement(By.id("pt1:USra:0:RAp1:0:tree:26::di")).click(); //product management
+		TimeUnit.SECONDS.sleep(10);
+		driver.findElement(By.id("pt1:USra:0:RAp1:0:tree:30::di")).click(); //Item link
+		TimeUnit.SECONDS.sleep(10);
+		driver.findElement(By.id("pt1:USra:0:RAp1:0:tree:34::di")).click(); //Item Import
+		TimeUnit.SECONDS.sleep(10);
+		
+		TimeUnit.SECONDS.sleep(40);
+		 
+		WebElement report = driver.findElement(By.linkText("SmartMapReport")); //Select Report link
+		//TimeUnit.SECONDS.sleep(30);
+		report.click();
+		//TimeUnit.SECONDS.sleep(20);
+		//report.click();
+		
+		
+		Thread.sleep(1500);
+		
+		/*driver.findElement(By.linkText("More...")).click(); //More tab
+		TimeUnit.SECONDS.sleep(30);
+		*/
+		
+		//driver.findElement(By.xpath(".//*[@id='idCatalogItemsAccordion']/div[1]/div[2]/table/tbody/tr[3]/td/div/table/tbody/tr[3]/td/table/tbody/tr/td[3]/a")).click();
+		
+       }catch(Exception e){
+			e.printStackTrace();
+		}
+	
+
+	}
+}

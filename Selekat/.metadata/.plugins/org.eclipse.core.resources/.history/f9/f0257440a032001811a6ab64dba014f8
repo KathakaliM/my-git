@@ -1,0 +1,27 @@
+url=https://ecdy-test.prc.us2.oraclecloud.com/procurement/faces/FndOverview
+implicitlywait=40
+username=Lakshaman.parihar
+password=Honey1comb
+navigator=pt1:_UISmmLink::icon
+pim=pt1:nv_itemNode_product_management_items
+searchIcn=_FOpt1:_FOr1:0:_FOSritemNode_product_management_items:0:_FOTsdiItemWorkareaSearch::icon
+report=pt1:nv_itemNode_tools_reports_and_analytics
+sharedFld=pt1:USra:0:RAp1:0:tree:1::di
+supplychn=pt1:USra:0:RAp1:0:tree:19::di
+productmng=pt1:USra:0:RAp1:0:tree:26::di
+item=pt1:USra:0:RAp1:0:tree:30::di
+itemImp=pt1:USra:0:RAp1:0:tree:34::di
+reportSlc=Change Order Listing Report
+more=More...
+chngorder=pt1:USra:0:RAp1:0:tree:33::di
+advanced=_FOpt1:_FOr1:0:_FOSritemNode_product_management_items:0:_FOTRaTj_id_1:1:dynam1:0:commandLink1
+itemclass=_FOpt1:_FOr1:0:_FOSritemNode_product_management_items:0:MAt2:0:pt1:AP1:ItemC1:0:itemClassNameId::lovIconId
+selectclass=Upgrade Test
+search=_FOpt1:_FOr1:0:_FOSritemNode_product_management_items:0:MAt2:0:pt1:AP1:ItemC1:0:itemClassNameId::dropdownPopup::popupsearch
+Itemcls=_FOpt1:_FOr1:0:_FOSritemNode_product_management_items:0:MAt2:0:pt1:AP1:ItemC1:0:itemClassNameId::_afrLovInternalQueryId:value00::content
+search2=Search
+select=.//*[@id='_FOpt1:_FOr1:0:_FOSritemNode_product_management_items:0:MAt2:0:pt1:AP1:ItemC1:0:itemClassNameId_afrLovInternalTableId::db']/table/tbody/tr[1]/td[2]/div/table/tbody/tr/td[1]
+buttonOk=OK
+optn=.//*[@id='_FOpt1:_FOr1:0:_FOSritemNode_product_management_items:0:MAt2:0:pt1:AP1:ItemC1:0:itemClassNameId::dropdownPopup::dropDownContent::db']/table[2]/tbody/tr[14]/td[1]
+btn=.//*[@id='_FOpt1:_FOr1:0:_FOSritemNode_product_management_items:0:MAt2:0:pt1:AP1:ItemC1:0:itemClassNameId_afrLovInternalTableId::db']/table/tbody/tr[1]/td[1]
+text=Upgrade Test
